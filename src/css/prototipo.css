@@ -1,3 +1,19 @@
+:root {
+    --cor-primaria: #0010DB;
+    --cor-primaria-escura: #3109DB;
+    --cor-hover: #94d2bd;
+    --cor-fundo: #f2f2f2;
+    --cor-texto: #333;
+    --cor-article-borda: #005f73;
+
+    --padding-padrao: 20px;
+    --largura-maxima: 1200px;
+    --altura-logo: 60px;
+    --gap-nav: 40px;
+    --gap-ul: 20px;
+    --sombra-padrao: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,17 +22,17 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 header {
-    background-color: #0010DB;
+    background-color: var(--cor-primaria);
     padding: 30px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: var(--sombra-padrao);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,16 +40,16 @@ header {
 
 nav {
     width: 100%;
-    max-width: 1200px;
+    max-width: var(--largura-maxima);
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 0 40px;
-    gap: 40px;
+    gap: var(--gap-nav);
 }
 
 nav img {
-    height: 60px;
+    height: var(--altura-logo);
     width: auto;
 }
 
@@ -44,7 +60,7 @@ nav ul {
     flex-wrap: wrap;
     list-style: none;
     font-size: 1em;
-    gap: 20px;
+    gap: var(--gap-ul);
 }
 
 nav ul li a {
@@ -55,10 +71,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #94d2bd;
+    color: var(--cor-hover);
     text-decoration: underline;
 }
-
 
 @media (max-width: 768px) {
     nav {
@@ -77,7 +92,6 @@ nav ul li a:hover {
     }
 }
 
-
 main {
     flex: 1;
     display: flex;
@@ -95,15 +109,13 @@ main img {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-
-
 footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #3109DB;
+    background-color: var(--cor-primaria-escura);
     color: white;
-    padding: 20px 0;
+    padding: var(--padding-padrao) 0;
     flex-wrap: wrap;
     text-align: center;
     font-size: 1em;
@@ -115,7 +127,6 @@ footer {
     align-items: center;
     margin: 5px 10px;
 }
-
 
 @media (max-width: 600px) {
     nav {
