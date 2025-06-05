@@ -21,7 +21,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
     display: flex;
@@ -74,6 +74,12 @@ nav ul li a:hover {
     color: var(--cor-hover);
     text-decoration: underline;
 }
+
+.ativo {
+    border-bottom: 2px solid var(--cor-hover);
+    padding-bottom: 3px;
+}
+
 
 @media (max-width: 768px) {
     nav {
