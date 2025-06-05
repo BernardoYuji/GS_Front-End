@@ -16,8 +16,8 @@ body {
 
 
 header {
-    background-color: #2900DB;
-    padding: 20px 0;
+    background-color: #0010DB;
+    padding: 30px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: flex;
     justify-content: center;
@@ -26,8 +26,17 @@ header {
 
 nav {
     width: 100%;
+    max-width: 1200px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 40px;
+    gap: 40px;
+}
+
+nav img {
+    height: 60px;
+    width: auto;
 }
 
 nav ul {
@@ -36,10 +45,8 @@ nav ul {
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
-}
-
-nav ul li {
-    margin: 0 15px;
+    font-size: 1em;
+    gap: 20px;
 }
 
 nav ul li a {
@@ -53,6 +60,88 @@ nav ul li a:hover {
     color: #94d2bd;
     text-decoration: underline;
 }
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav img {
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+header {
+    background-color: #0010DB;
+    padding: 30px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 40px;
+    gap: 40px;
+}
+
+nav img {
+    height: 60px;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 1em;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #94d2bd;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav img {
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
 
 
 main {
@@ -95,7 +184,7 @@ footer {
     align-items: center;
     background-color:#2900DB;
     color: white;
-    padding: 15px 0;
+    padding: 20px 0;
     flex-wrap: wrap;
     text-align: center;
     font-size: 0.9em;
