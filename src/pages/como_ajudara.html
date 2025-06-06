@@ -5,15 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/como_ajudara.css">
+        <script defer src="../js/app.js"></script>
         <title>Como ajudará</title>
     </head>
     <body>
          
         <header>
             <nav>
+                <img src="../assets/logo.png" alt="logo da empresa">
+                    <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul>
-                    <img src="../assets/logo.png" alt="logo da empresa">
-                    <li><a href="index.html">Problema que será resolvido</a></li>
+                   <li><a href="index.html">Problema que será resolvido</a></li>
                     <li><a href="tecnologias.html">Tecnologias</a></li>
                      <li><a href="objetivos.html">Objetivos</a></li>
                       <li><a href="publico.html">Público-Alvo</a></li>
@@ -21,6 +27,9 @@
                         <li><a href="como_ajudara.html" class="ativo">Como ajudará</a></li>
                         <li><a href="prototipo.html">Protótipo</a></li>
                 </ul>
+                <button onclick="mudarCor('#e0f7fa')" style="background-color: #e0f7fa;">💧</button> 
+                <button onclick="mudarCor('#0288d1')" style="background-color: #0288d1;">🌊</button> 
+                <button onclick="mudarCor('#01579b')" style="background-color: #01579b;">🌌</button> 
             </nav>
 
         </header>
@@ -43,4 +52,5 @@
         <div class="footer-item">1ESPW - 2025</div>
         </footer>
     </body>
+    <script src="../js/app.js"></script>
 </html>
