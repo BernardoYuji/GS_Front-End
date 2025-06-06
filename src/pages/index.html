@@ -1,54 +1,61 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css">
-        <script defer src="../js/app.js"></script>
-        <title>Problema que será resolvido</title>
-    </head>
-    <body>
-        
-        <header>
-            <nav>
-                <img src="../assets/logo.png" alt="logo da empresa">
-                <button class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                 
-                <ul>
-                    <li><a href="index.html" class="ativo">Problema que será resolvido</a></li>
-                    <li><a href="tecnologias.html">Tecnologias</a></li>
-                     <li><a href="objetivos.html">Objetivos</a></li>
-                      <li><a href="publico.html">Público-Alvo</a></li>
-                       <li><a href="beneficios.html">Benefícios</a></li>
-                        <li><a href="como_ajudara.html">Como ajudará</a></li>
-                        <li><a href="prototipo.html">Protótipo</a></li>
-                </ul>
-                <button onclick="mudarCor('#e0f7fa')" style="background-color: #e0f7fa;">💧</button> 
-                <button onclick="mudarCor('#0288d1')" style="background-color: #0288d1;">🌊</button> 
-                <button onclick="mudarCor('#01579b')" style="background-color: #01579b;">🌌</button> 
-            </nav>
-        </header>
-       
-        <main>
-             <section>
-                <article>
-                    <p>Na busca por tentar salvar o máximo de vidas possíveis em situações de enchentes, nós da HIDROGUARD desenvolvemos ideias para ajudar a salvar vidas.
-                    <br><br>
-                        A fim de atingir nossos objetivos, desenvolvemos um aplicativo de rotas de fuga e um sistema de comportas automatizadas.
-                    </p>
-                </article>
-            </section>
-        </main>
-        
-        <footer>
-        <div class="footer-item">Global Solution</div>
-        <div class="footer-item">Front-End Design</div>
-        <div class="footer-item">1ESPW - 2025</div>
-        </footer>
-    </body>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HidroGuard - Início</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/app.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <img src="../assets/logo.png" alt="Logo da Empresa" />
+      <button class="hamburger" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="menu">
+        <li><a href="index.html">Problema</a></li>
+        <li><a href="tecnologias.html">Tecnologias</a></li>
+        <li><a href="objetivos.html">Objetivos</a></li>
+        <li><a href="publico.html">Público</a></li>
+        <li><a href="beneficios.html">Benefícios</a></li>
+        <li><a href="como_ajudara.html">Como Ajudará</a></li>
+        <li><a href="prototipo.html">Protótipo</a></li>
+      </ul>
+      <div class="theme-buttons">
+        <button onclick="mudarCor('#e0f7fa')" title="Claro">💧</button>
+        <button onclick="mudarCor('#0288d1')" title="Azul">🌊</button>
+        <button onclick="mudarCor('#01579b')" title="Escuro">🌌</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="slideshow">
+      <img src="../assets/hidroguard.png" class="ativar slide" alt="Hidroguard" />
+      <img src="../assets/alertas.png" class="slide" alt="Alertas" />
+      <img src="../assets/prototipo.png" class="slide" alt="Prototipo" />
+    </section>
+
+    <article style="padding: 1rem;">
+      <p>
+        Na busca por tentar salvar o máximo de vidas possíveis em situações de enchentes, nós da HIDROGUARD desenvolvemos ideias para ajudar a salvar vidas.
+        <br><br>
+        Desenvolvemos um aplicativo de rotas de fuga e um sistema de comportas automatizadas.
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-item">Global Solution</div>
+    <div class="footer-item">Front-End Design</div>
+    <div class="footer-item">1ESPW - 2025</div>
+  </footer>
+  
+</body>
+<script src="../js/app.js"></script>
 </html>
